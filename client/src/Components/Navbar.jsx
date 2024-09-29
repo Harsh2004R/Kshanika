@@ -33,7 +33,6 @@ import "../App.css"
 import Logo from "../assets/kshanika_logo.png"
 export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure()
-
     return (
         <Box position={"fixed"} top={"0"} w="100%" h="60px" bg="red">
             <Flex
@@ -116,7 +115,7 @@ export default function Navbar() {
 const DesktopNav = () => {
     const linkColor = "#d9dcda"
     const linkHoverColor = "#fff"
-    const popoverContentBgColor = "#cccccc"
+    const popoverContentBgColor = "#eee"
 
     return (
         <Stack direction={'row'} spacing={4}>
@@ -128,7 +127,7 @@ const DesktopNav = () => {
                                 as="a"
                                 p={2}
                                 href={navItem.href ?? '#'}
-                                fontSize={{ md: "20px", lg: "20px" }} fontFamily={"writing2"}
+                                fontSize={{ md: "15px", lg: "17px" }} fontFamily={"writing2"}
                                 fontWeight={500}
                                 color={linkColor}
                                 _hover={{
@@ -170,12 +169,12 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             display={'block'}
             p={2}
             rounded={'md'}
-            _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+            _hover={{ bg:"#eee" }}>
             <Stack direction={'row'} align={'center'}>
                 <Box>
                     <Text
                         transition={'all .3s ease'}
-                        _groupHover={{ color: 'pink.400' }}
+                        _groupHover={{ color: "blue.600",fontWeight:"400" }}
                         fontWeight={500}
                         fontFamily={"writing2"}
                     >
@@ -191,7 +190,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
                     justify={'flex-end'}
                     align={'center'}
                     flex={1}>
-                    <Icon color={'pink.400'} w={5} h={5} as={ChevronRightIcon} />
+                    <Icon color={'blue.500'} w={5} h={5} as={ChevronRightIcon} />
                 </Flex>
             </Stack>
         </Box>
