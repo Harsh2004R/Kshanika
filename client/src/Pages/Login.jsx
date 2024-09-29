@@ -9,7 +9,7 @@ import {
 import login from "../assets/login.png"
 const Login = () => {
   return (
-    <Center w="100%" h="100vh" bg=""
+    <Center w="100%" h="100vh" bg="#222"
     >
       <Center
         pos={"relative"}

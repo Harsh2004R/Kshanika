@@ -1,10 +1,15 @@
+import { Text,Box } from '@chakra-ui/react'
 import React from 'react'
-
+import "../App.css"
+import NavBar from '../Components/Navbar'
 const Home = () => {
   return (
-    <div>
-      Home
-    </div>
+    <>
+      <NavBar />
+      <Box w="100%" h="100vh" >
+
+      </Box>
+    </>
   )
 }
 

@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'writing';
+    src: url('./Fonts/writing1/BlackPink-Cursive-Demo.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'writing2';
+    src: url('./Fonts/cursive_serif/CursiveSerif-Book.ttf') format('woff');
+  }
+  
+  @font-face {
+    font-family: 'head';
+    src: url('./Fonts/toxicpowers/ToxicPowers.ttf') format('truetype');
+  }
+  
