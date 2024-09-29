@@ -39,7 +39,9 @@ import Logo from "../assets/kshanika_logo.png"
 export default function Navbar() {
     const { isOpen, onToggle } = useDisclosure()
     return (
-        <Box position={"fixed"} top={"0"} w="100%" h="60px" bg="red">
+        <Box 
+        position={"fixed"} top={"0"}
+        w="100%" h="60px" bg="red">
             <Flex
                 h="60px"
                 bg="#202321"
