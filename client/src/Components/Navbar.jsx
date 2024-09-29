@@ -22,12 +22,17 @@ import {
     PopoverTrigger,
     PopoverContent,
     Image,
+    Input,
+    InputLeftElement,
+    InputGroup,
+    InputRightElement,
 } from '@chakra-ui/react'
 import {
     HamburgerIcon,
     CloseIcon,
     ChevronDownIcon,
     ChevronRightIcon,
+    Search2Icon
 } from '@chakra-ui/icons'
 import "../App.css"
 import Logo from "../assets/kshanika_logo.png"
@@ -58,15 +63,31 @@ export default function Navbar() {
                     />
                 </Flex>
                 <Flex
-                    //  border={"1px solid red"}
+                    // border={"1px solid red"}
                     flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
                     <Box display={{ base: "none", md: "block", lg: "block" }} w="50px" h={"50px"}>
                         <Image src={Logo} w="100%" h="100%" alt="Hommi.art.logo.png" />
                     </Box>
-                    <Flex display={{ base: 'none', md: 'flex' }} ml={10} alignItems={"center"}>
+                    <Flex display={{ base: 'none', md: 'flex' }} ml={8} mr={10} alignItems={"center"}>
                         <DesktopNav />
                     </Flex>
+                    <Box display={"flex"} alignContent={"center"} alignItems={"center"} justifyContent={"center"}>
+                        <InputGroup>
+                            <Input
+                                borderRadius="50px"
+
+                                w={{ base: "200px", md: "200px", lg: "200px" }}
+                                type="text"
+                                placeholder="Search here..."
+                            />
+                            <InputLeftElement
+                                pointerEvents="none"
+                                children={<Search2Icon color="#fff" />}
+                            />
+                        </InputGroup>
+                    </Box>
                 </Flex>
+
 
 
 
@@ -169,12 +190,12 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
             display={'block'}
             p={2}
             rounded={'md'}
-            _hover={{ bg:"#eee" }}>
-            <Stack direction={'row'} align={'center'}>
+            _hover={{ bg: "#eee" }}>
+            <Stack direction={'row'} align={'center'}  >
                 <Box>
                     <Text
                         transition={'all .3s ease'}
-                        _groupHover={{ color: "blue.600",fontWeight:"400" }}
+                        _groupHover={{ color: "blue.600", fontWeight: "400" }}
                         fontWeight={500}
                         fontFamily={"writing2"}
                     >
